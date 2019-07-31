@@ -12,10 +12,10 @@ class School
   end
   
   def grade(grade)
-    i = 0
-    while i < grade.length
-      return grade[i]
-      i += 1
+    roster.each do |class_grade, student|
+      if class_grade == grade
+        return student
+      end
     end
   end
 end
