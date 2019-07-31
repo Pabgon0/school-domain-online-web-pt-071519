@@ -18,4 +18,10 @@ class School
       end
     end
   end
+  
+  def sort
+    roster.sort_by do |grade, student|
+      grade
+    end
+  end
 end
