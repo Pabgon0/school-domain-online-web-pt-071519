@@ -12,8 +12,9 @@ class School
   end
   
   def grade(grade)
-    grade.each do |student|
-      return student
+    i = 0
+    while i < grade.length
+      return grade[i]
+      i += 1
     end
-  end
 end
