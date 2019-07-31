@@ -17,4 +17,5 @@ class School
       return grade[i]
       i += 1
     end
+  end
 end
