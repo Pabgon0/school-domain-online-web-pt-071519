@@ -11,4 +11,9 @@ class School
     roster[grade] << student_name
   end
   
+  def grade(grade)
+    grade.each do |student|
+      return student
+    end
+  end
 end
